@@ -5,17 +5,11 @@ import { Component, OnInit , Input} from '@angular/core';
   templateUrl: './post.component.html',
   styleUrls: ['./post.component.css']
 })
-export class PostComponent implements OnInit{
+export class PostComponent {
   title: string = "List of Posts";
   messagePost: string = "Message Post";
   sendToPostList: string = "This message from post";
+  childMessage: string = "Child Message";
 
   @Input() fromParent: string = '';
-
-  constructor(){}
-
-  ngOnInit(): void {
-    
-  }
-
 }
