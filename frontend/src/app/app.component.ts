@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'frontend';
-  parentMessage: string = "Message coming from parent components";
+  parentMessage: string = "Message Changed";
 }
