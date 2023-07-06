@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navBar/navbar.component';
 import { PostComponent } from './post/post.component';
 import { PostListComponent } from './post-list/post-list.component';
+import { DataBindingComponent } from './data-binding/data-binding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     PostComponent,
-    PostListComponent
+    PostListComponent,
+    DataBindingComponent
   ],
   imports: [
     BrowserModule
