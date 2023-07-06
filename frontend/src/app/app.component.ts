@@ -9,6 +9,7 @@ export class AppComponent implements AfterViewInit{
   title = 'frontend';
   parentMessage: string = "Message Changed";
   message : string = '';
+  fromChildOutput : string = '';
 
   @ViewChild(PostComponent) childComp: any;
 
@@ -21,5 +22,10 @@ export class AppComponent implements AfterViewInit{
     this.message = this.childComp.childMessage;
     console.log("hello " + this.message);
     
+  }
+
+  reciveMessage($event : any){
+    console.log("from reciveMessage " + $event);
+    this.fromChildOutput = $event;
   }
 }
