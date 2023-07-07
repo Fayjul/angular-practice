@@ -9,4 +9,8 @@ export class DataBindingComponent {
   bool: boolean = false;
   message = 'Message from data binding';
   imgUrl = 'https://smaller-pictures.appspot.com/images/dreamstime_xxl_65780868_small.jpg';
+
+  buttonClick(){
+    this.bool = !this.bool;
+  }
 }
