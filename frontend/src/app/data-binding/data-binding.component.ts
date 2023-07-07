@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./data-binding.component.css']
 })
 export class DataBindingComponent {
-  bool: boolean = true;
+  bool: boolean = false;
   message = 'Message from data binding';
   imgUrl = 'https://smaller-pictures.appspot.com/images/dreamstime_xxl_65780868_small.jpg';
 }
