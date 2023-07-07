@@ -9,9 +9,11 @@
 <br>
 
 <!-- Event Filtering -->
-<input type="text" (keyup.enter) = "onKeyUP()">
+<input type="text" (keyup.enter) = "onKeyUP(username.value)" #username>
 
 
 <!-- <img src="{{imgUrl}}" alt=""> -->
 <!-- Property Binding -->
 <!--<img [src]="imgUrl" alt=""> -->
+
+<!-- Template variable -->

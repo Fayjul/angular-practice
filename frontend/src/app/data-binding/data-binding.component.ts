@@ -14,8 +14,8 @@ export class DataBindingComponent {
     this.bool = !this.bool;
   }
 
-  onKeyUP(){
-    console.log("Enter key is pressed");
+  onKeyUP(user : any){
+    console.log(user);
     
   }
 }
