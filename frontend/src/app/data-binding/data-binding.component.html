@@ -9,7 +9,10 @@
 <br>
 
 <!-- Event Filtering -->
-<input type="text" (keyup.enter) = "onKeyUP(username.value)" #username>
+<!-- <input type="text" (keyup.enter) = "onKeyUP(username.value)" #username><br> -->
+
+<input type="text" [(ngModel)] = "userName" (keyup.enter) = "onKeyUP()">
+<p>User Name is {{userName}}</p>
 
 
 <!-- <img src="{{imgUrl}}" alt=""> -->

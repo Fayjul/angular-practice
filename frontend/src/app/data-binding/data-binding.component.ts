@@ -9,13 +9,16 @@ export class DataBindingComponent {
   bool: boolean = false;
   message = 'Message from data binding';
   imgUrl = 'https://smaller-pictures.appspot.com/images/dreamstime_xxl_65780868_small.jpg';
+  userName : string = '';
 
   buttonClick(){
     this.bool = !this.bool;
   }
 
-  onKeyUP(user : any){
-    console.log(user);
+  onKeyUP(){
+    //console.log(user);
+    //this.userName = user;
+    console.log(this.userName);
     
   }
 }
