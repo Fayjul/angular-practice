@@ -7,6 +7,7 @@ import { PostComponent } from './post/post.component';
 import { PostListComponent } from './post-list/post-list.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
+import { DataBindingAssignmentComponent } from './data-binding-assignment/data-binding-assignment.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     PostComponent,
     PostListComponent,
-    DataBindingComponent
+    DataBindingComponent,
+    DataBindingAssignmentComponent
   ],
   imports: [
     BrowserModule, 
