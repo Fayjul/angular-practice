@@ -15,8 +15,11 @@
 <p>User Name is {{userName}}</p>
 
 <br>
-<input type="text" value="one way data binding">
-
+<h1>One way and two way databinding</h1>
+<input type="text" [value]="textValue" (keyup.enter) = "onKeyUP()">
+<br>
+<h2>Two way data binding</h2>
+<input type="text" [(ngModel)]="textValue" (keyup.enter) = "onKeyUP()">
 
 <!-- <img src="{{imgUrl}}" alt=""> -->
 <!-- Property Binding -->

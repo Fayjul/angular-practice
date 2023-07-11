@@ -10,6 +10,7 @@ export class DataBindingComponent {
   message = 'Message from data binding';
   imgUrl = 'https://smaller-pictures.appspot.com/images/dreamstime_xxl_65780868_small.jpg';
   userName : string = '';
+  textValue: string = 'Value is coming from coponents';
 
   buttonClick(){
     this.bool = !this.bool;
@@ -18,7 +19,7 @@ export class DataBindingComponent {
   onKeyUP(){
     //console.log(user);
     //this.userName = user;
-    console.log(this.userName);
+    console.log(this.textValue);
     
   }
 }
