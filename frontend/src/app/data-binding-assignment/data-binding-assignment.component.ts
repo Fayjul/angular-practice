@@ -10,5 +10,21 @@ export class DataBindingAssignmentComponent {
   postDescription = '';
   imageUrl = '';
   webUrl = '';
+  isImageShow : boolean = false;
+  isButtonShow : boolean = false;
+  isBackgroundShow : boolean = false;
+
+  alterBackground()
+  {
+    this.isBackgroundShow = !this.isBackgroundShow;
+  }
+  imageShow()
+  {
+    this.isImageShow = true;
+  }
+  buttonOfWeb()
+  {
+    this.isButtonShow = true;
+  }
 
 }

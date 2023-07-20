@@ -1,16 +1,18 @@
 <h1 class="item-center">Post Form</h1>
 
-<input class="item-center" [(ngModel)] = "postTitle" type="text" placeholder="Post Title">
+<input class="item-center" [(ngModel)] = "postTitle" type="text"  placeholder="Post Title">
 <br>
 <input class="item-center" [(ngModel)] = "postDescription" type="text" placeholder="Description">
 <br>
-<input class="item-center" [(ngModel)] = "imageUrl" type="text" placeholder="Link of Image">
+<input class="item-center" [(ngModel)] = "imageUrl" (onkeyup.enter)="imageShow()" type="text" placeholder="Link of Image">
 <br>
-<input class="item-center" [(ngModel)] = "webUrl" type="text" placeholder="Link of website">
+<input class="item-center" [(ngModel)] = "webUrl" type="text" (onkeyup.enter)="buttonOfWeb()" placeholder="Link of website">
 <br>
-<input type="checkbox" class="item-center"> <label for="">Add Background</label>
+<input type="checkbox" (onkeyup.enter)="alterBackground()" class="item-center"> <label for="">Add Background</label>
 <br>
-<H1>{{postTitle}}</H1>
+<H1 [style.background] = "isBackgroundShow ? 'red' : '' ">{{postTitle}}</H1>
 <p>{{postDescription}}</p>
 <p>{{imageUrl}}</p>
+<img src="{{imageUrl}}" alt="">
+<a href="{{webUrl}}"></a>
 <p>{{webUrl}}</p>
