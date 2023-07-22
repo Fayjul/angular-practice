@@ -8,6 +8,7 @@ import { PostListComponent } from './post-list/post-list.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
 import { DataBindingAssignmentComponent } from './data-binding-assignment/data-binding-assignment.component';
+import { DataBindingA1Component } from './data-binding-a1/data-binding-a1.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DataBindingAssignmentComponent } from './data-binding-assignment/data-b
     PostComponent,
     PostListComponent,
     DataBindingComponent,
-    DataBindingAssignmentComponent
+    DataBindingAssignmentComponent,
+    DataBindingA1Component
   ],
   imports: [
     BrowserModule, 
