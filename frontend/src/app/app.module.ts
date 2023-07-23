@@ -9,6 +9,7 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
 import { DataBindingAssignmentComponent } from './data-binding-assignment/data-binding-assignment.component';
 import { DataBindingA1Component } from './data-binding-a1/data-binding-a1.component';
+import { AngularDirectiveComponent } from './angular-directive/angular-directive.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { DataBindingA1Component } from './data-binding-a1/data-binding-a1.compon
     PostListComponent,
     DataBindingComponent,
     DataBindingAssignmentComponent,
-    DataBindingA1Component
+    DataBindingA1Component,
+    AngularDirectiveComponent
   ],
   imports: [
     BrowserModule, 
