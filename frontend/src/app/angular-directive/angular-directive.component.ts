@@ -22,4 +22,14 @@ export class AngularDirectiveComponent {
       console.log(this.postArray[i]);
     }
   }
+
+  addNew(){
+    this.objArray.push({id: 6, postTitle : "Post 6"});
+  }
+  onDelete(i : any)
+  {
+    // let index = this.objArray.indexOf(post);
+    // console.log(index)
+    this.objArray.splice(i, 1);
+  }
 }

@@ -2,7 +2,10 @@
 <ul>
     <li *ngFor = "let post of postArray">{{post}}</li>
 </ul>
+<button (click) = "addNew()">Add new post</button>
 <h1>All of my Post</h1>
 <ul>
-    <li *ngFor = "let post of objArray">{{post.postTitle}}</li>
+    <li *ngFor = "let post of objArray ; let i = index">
+        {{post.postTitle}} <button (click) = "onDelete(i)">Delete</button>
+    </li>
 </ul>
