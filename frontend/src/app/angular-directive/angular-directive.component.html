@@ -3,9 +3,15 @@
     <li *ngFor = "let post of postArray">{{post}}</li>
 </ul>
 <button (click) = "addNew()">Add new post</button>
-<h1>All of my Post</h1>
-<ul>
-    <li *ngFor = "let post of objArray ; let i = index">
-        {{post.postTitle}} <button (click) = "onDelete(i)">Delete</button>
-    </li>
-</ul>
+
+<div *ngIf = 'objArray.length > 0'>
+    <h1>All of my Post</h1>
+    <ul>
+        <li *ngFor = "let post of objArray ; let i = index">
+            {{post.postTitle}} <button (click) = "onDelete(i)">Delete</button>
+        </li>
+    </ul>
+</div>
+<div *ngIf = 'objArray.length == 0'>
+    <h1>There is no data in your array.</h1>
+</div>
