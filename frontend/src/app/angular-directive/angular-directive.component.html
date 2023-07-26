@@ -4,7 +4,7 @@
 </ul>
 <button (click) = "addNew()">Add new post</button>
 
-<div *ngIf = 'objArray.length > 0'>
+<div *ngIf = 'objArray.length > 0 ; else noData'>
     <h1>All of my Post</h1>
     <ul>
         <li *ngFor = "let post of objArray ; let i = index">
@@ -12,6 +12,6 @@
         </li>
     </ul>
 </div>
-<div *ngIf = 'objArray.length == 0'>
+<ng-template #noData>
     <h1>There is no data in your array.</h1>
-</div>
+</ng-template>
